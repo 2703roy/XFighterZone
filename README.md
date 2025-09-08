@@ -1,10 +1,10 @@
-XFighterZone
+# XFighterZone
 XFighterZone is an on-chain gaming platform built on the Linera blockchain framework, seamlessly integrating with a Unity-based game client. The project leverages a decentralized, multi-chain architecture to ensure game state, player stats, and leaderboards are transparent, verifiable, and trustless.
 
-Introduction
+## Introduction
 This project demonstrates a robust, decentralized application (dApp) built on Linera, where each match is a separate microchain. The system orchestrates interaction between a Unity game client, a Node.js orchestrator, and multiple Linera services and contracts to manage the full lifecycle of a game match, from matchmaking to final leaderboard updates.
 
-Core Technologies
+## Core Technologies
 Linera: A multi-chain blockchain framework that provides the infrastructure for decentralized, high-performance applications.
 
 Unity: The game client, responsible for the user interface, real-time gameplay, and user experience.
@@ -20,7 +20,7 @@ Unity Server (Coordinator): Handles matchmaking and coordinates the creation of 
 
 Orchestrator Backend (Node.js): Automates the Linera-specific tasks, such as creating new microchains for each match and instantiating the xfighter_contract on them. It is the crucial bridge between the Unity server and the Linera blockchain.
 
-Linera Contracts:
+## Linera Contracts:
 
 xfighter_contract.wasm: A smart contract deployed on each match's dedicated microchain. It records the final match results and sends a cross-chain message to the Leaderboard contract.
 
@@ -39,7 +39,7 @@ Cross-Chain Messaging: The xfighter contract, after processing the mutation, sen
 
 Displaying Leaderboard: Unity clients query the leaderboard_service directly to fetch and display up-to-date rankings.
 
-Getting Started
+## Getting Started
 To run and contribute to this project, you need to set up the following:
 
 Linera Environment: Follow the official Linera documentation to set up your local development environment.
@@ -50,8 +50,22 @@ Node.js: For the Orchestrator backend.
 
 Unity: For the game client.
 
-Contributing
-We welcome contributions! Please feel free to open issues or submit pull requests.
-
 License
-This project is licensed under the Apache License 2.0.
+This project is licensed under the Apache License 2.0 and Linera Blockchain
+- https://x.com/linera_io
+- https://linera.io/
+- https://linera.dev/developers/getting_started.html 
+- https://github.com/linera-io/linera-protocol/tree/main 
+- https://github.com/linera-io/linera-protocol/blob/ac85d8ae32d8e759e87f3407cd02438970d0b3ae/linera-sdk/src/lib.rs
+- https://linera.dev/developers/advanced_topics/block_creation.html
+- https://linera.dev/developers/backend/abi.html
+- https://linera.dev/developers/backend/contract.html
+- https://linera.dev/developers/backend/service.html
+- https://linera.dev/developers/backend/deploy.html
+- https://linera.dev/developers/advanced_topics/assets.html
+- https://linera.dev/developers/backend/messages.html
+- https://linera.dev/developers/backend/composition.html
+- https://linera.dev/developers/backend/blobs.html
+- https://linera.dev/developers/backend/logging.html
+- https://linera.dev/developers/backend/testing.html
+
